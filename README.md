@@ -1,13 +1,26 @@
-# 3D-Character
+# 05-FPS-Maze
+Context and date
+First person shooter game made for MSCH C-220 in godot
 
-An animated 3D character that can be used in the 3D-RPG project
-
-Based on the [Kenney Character Assets](https://kenney.itch.io/kenney-character-assets) provided by kenney.nl. The model and animations were compiled in Blender and then imported into Godot.
+Description
+A simple 3rd person rpg game in which the player can speak to an npc, shoot targets, and destroy an enemy with simply ai in order to win the game
 
 ## Implementation
+Created in Godot 3.5
 
-Created in Blender 3.1.2 and Godot 3.4.2
+Features:
+Animated player character with a handheld weapon
+NPC with dialogue
+Simple AI drone enemy with textures applied
+Interactable objects (targets)
 
-## Created By
 
-Jason Francis
+## References
+[Blaster kit, provided by kenney.nl] (https://kenney.nl/assets/blaster-kit#inline-download)
+
+
+## Future Development
+None
+
+## Created by
+Alexander Trippel
