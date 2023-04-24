@@ -13,11 +13,18 @@ Animated player character with a handheld weapon
 NPC with dialogue
 Simple AI drone enemy with textures applied
 Interactable objects (targets)
+In game pause menu
 
 
 ## References
 [Blaster kit, provided by kenney.nl] (https://kenney.nl/assets/blaster-kit#inline-download)
-
+[Space kit, provided by kenney.nl] (https://kenney.nl/assets/space-kit)
+[Animated Characters 1, provided by kenney.nl] (https://kenney.nl/assets/animated-characters-1)
+[Animated Characters 2, provided by kenney.nl] (https://kenney.nl/assets/animated-characters-2)
+[Plastic 010, provided by Lennart Demes](https://ambientcg.com/view?id=Plastic010)
+[Metal 032, provided by Lennart Demes](https://ambientcg.com/view?id=Metal032)
+[Metal 033, provided by Lennart Demes](https://ambientcg.com/view?id=Metal033)
+[Metal 034, provided by Lennart Demes](https://ambientcg.com/view?id=Metal034)
 
 ## Future Development
 None
