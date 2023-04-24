@@ -31,7 +31,8 @@ func _on_Tween_tween_all_completed():
 
 
 func _on_Area_body_entered(body):
-	body.damage(10)
+	if Global.gamestarted == true:
+		body.damage(10)
 
 func die():
 	if get_node('/root/Game/Target_Container').get_child_count() == 0:

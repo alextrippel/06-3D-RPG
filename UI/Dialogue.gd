@@ -17,6 +17,8 @@ func _physics_process(_delta):
 			dialogue_pos += 1
 	elif dialogue.size():
 		emit_signal('finished_dialogue')
+		if not Global.gamestarted :
+			Global.gamestarted = true
 		hide_dialogue() 
 
 func start_dialogue(d):

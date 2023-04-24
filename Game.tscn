@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://UI/UI.gd" type="Script" id=8]
 [ext_resource path="res://UI/Dialogue.gd" type="Script" id=9]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://UI/Menu.gd" type="Script" id=11]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 100, 0.5, 100 )
@@ -161,6 +162,50 @@ bbcode_enabled = true
 bbcode_text = "[center]Hello[/center]"
 text = "Hello"
 
+[node name="Menu" type="Control" parent="UI"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="UI/Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.490196 )
+
+[node name="GamePaused" type="Label" parent="UI/Menu/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -200.0
+text = "Paused"
+align = 1
+valign = 1
+
+[node name="Continue" type="Button" parent="UI/Menu/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 20.0
+text = "Continue"
+
+[node name="Quit" type="Button" parent="UI/Menu/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 100.0
+text = "Quit"
+
 [connection signal="body_entered" from="NPC/Area" to="NPC" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="NPC/Area" to="NPC" method="_on_Area_body_exited"]
 [connection signal="timeout" from="UI/Timer" to="UI" method="_on_Timer_timeout"]
+[connection signal="pressed" from="UI/Menu/ColorRect/Continue" to="UI/Menu" method="_on_Continue_pressed"]
+[connection signal="pressed" from="UI/Menu/ColorRect/Quit" to="UI/Menu" method="_on_Quit_pressed"]
